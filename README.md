@@ -1,7 +1,7 @@
 # M6
-## sesiones
+## Sesiones
   - [x] Sesión 0 : Entorno de desarrollo
   - [ ] Sesión 1 : Primeros scripts
-## ejercicios
+## Ejercicios
   - Ejercicio1:
   - Ejercicio2:
