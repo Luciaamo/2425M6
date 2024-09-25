@@ -102,12 +102,22 @@ listaHtml += '</ul>'
 
 document.querySelector('#miLista').innerHTML = listaHtml;
 
-let tablaHtml = '<table>'
-
-for(let i=0;i<arrayPersonas.length;i++){
-  tablaHtml += `
-    <tr><td> $
+let tablaHtml = `
+  <table>
   `
-}
+    for(let i=0;i<arrayPersonas.length;i++){
+      tablaHtml += `
+        <tr> ${arrayPersonas[i].nombre} </tr>
+        <tr> ${arrayPersonas[i].apellidos} </tr>
+        `
+    }
+
+tablaHtml += `
+          </table>
+          `
+
+document.querySelector('#miTabla').innerHTML = tablaHtml;
+
+
 
 
