@@ -30,7 +30,7 @@ document.getElementById('btnSuma').addEventListener('click', function() {
 
 document.getElementById('btnIgual').addEventListener('click', function() {
     const resultat = eval(entradaActual);
-    console.log('Resultat:', resultat); // Testeja el resultat a la consola
+    console.log('Resultat:', resultat); 
     document.getElementById('pantalla').textContent = resultat;
 });
 
