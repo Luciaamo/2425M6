@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesion 4</title>
+    <style>
+        #p1{
+            background-color: red;
+        }
+        .alerta{
+            color: red;
+        }
+        .textoGrande{
+            font-size: 50px;
+        }
+        .borde{
+            border: 2px solid;
+        }
+        .cuadrado{
+            background-color: aqua;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilos, clases y atributos del DOM</h1>
+    <P id="p1" style="background-color: red;">COLOR DE FONDO</P>
+    <p id="p2" title="title de parrafo" class="alerta textoGrande">Párrafo con clases</p>
+    
+    <div>
+        <div class="cuadrado"></div>
+        <div class="cuadrado"></div>
+        <div class="cuadrado"></div>
+    </div>
+    
+    
+    <script>
+        document.querySelector('#p1').style.backgroundColor = "blue"; // modificar estilo (el nombre del estilo debe estar en camelCase)
+        document.querySelector('#p1').style.display = "block"; // ocultar elemento
+
+        // Añadir y quitar clases
+        console.log(document.querySelector('#p2').classList);
+        document.querySelector('#p2').classList.add("borde");
+        document.querySelector('#p2').classList.remove("alerta");
+
+        // Ver/Añadir y modificar clases
+        const p2 = document.querySelector('#p2');
+        console.log('title de p2', p2.getAttribute("title"));
+        p2.setAttribute('title', 'title modificado');
+        console.log('nuevo title', title.getAttribute("title"));
+
+        const cuadrado = document.querySelector('.cuadrado');
+        console.log(cuadrado.innerHTML);
+
+        // Seleccionar todos los elementos
+        const cuadrados = document.querySelectorAll('.cuadrado');
+        console.log('cuadrados', cuadrados);
+        console.log('segundo cuadrado', cuadrados[1].innerHTML);
+        cuadrados[2].classList.add('borde')
+
+
+    </script>
+</body>
+</html>
